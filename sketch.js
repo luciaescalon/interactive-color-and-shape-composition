@@ -3,7 +3,7 @@ let circleColor;
 let flower;
 
 async function setup() {
-  createCanvas(600, 700);
+  createCanvas(windowWidth, windowHeight);
   rectMode(CENTER);
 
   flower = await loadImage("flower.png");
@@ -60,5 +60,7 @@ function keyPressed() {
     random(255),
     random(255),
     random(255)
+
+    
   );
 }
